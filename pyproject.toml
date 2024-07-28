@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "lightpms"
+version = "0.1.0"
+description = "A light-weight portfolio management system."
+authors = ["v-bonilla <v-bonilla@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+sqlalchemy = "^2.0.23"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.0"
+ccxt = "^4.1.98"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+pylint = "^3.0.2"
+pytest = "^7.4.3"
+pytest-mock = "^3.12.0"
+isort = "^5.12.0"

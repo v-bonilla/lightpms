@@ -1,0 +1,6 @@
+.env
+docker/lightpms_db_volume_data/
+dist/
+.venv/
+.vscode/
+**/__pycache__/

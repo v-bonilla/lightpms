@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  lightpms_db:
+    image: postgres:16.0
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-admin}
+    volumes:
+      - lightpms_db_volume:/var/lib/postgresql/data
+    networks:
+      - lightpms_net
+    ports:
+      - "5432:5432"
+
+networks:
+  lightpms_net:
+
+volumes:
+  lightpms_db_volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./docker/lightpms_db_volume_data
+      o: bind
