@@ -12,6 +12,8 @@
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Configuration](#configuration)
+- [Run the Application](#run-the-application)
+- [Roadmap](#roadmap)
 
 ## Description
 
